@@ -27,7 +27,7 @@ spec = do
         isValidKeyFragment "000" `shouldBe` True
     context "with both numbers and letters" $ do
       it "is valid" $
-        isValidKeyFragment "000" `shouldBe` True
+        isValidKeyFragment "fragment000" `shouldBe` True
     context "with a dot" $ do
       it "is not valid" $ do
         isValidKeyFragment "some.fragment" `shouldBe` False
